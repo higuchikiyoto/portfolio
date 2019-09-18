@@ -1,0 +1,116 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	overflow: hidden;
+}
+nav{
+	position: fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:170px;
+	background:#FF3333
+}
+div{
+	font-size:180px;
+}
+ul{
+	font-size:24px;
+	display: table;
+	position:absolute;
+	position: fixed;
+	bottom:11px;
+}
+li{
+    margin-left: 33px;
+    line-height: 20px;
+    padding: 5px 0;
+}
+img {
+	width:100%;
+	height:100%;
+	z-index: -1;
+}
+.logo{
+	margin: 0 auto;
+	text-align: center;
+}
+.mainvisual{
+	float: right;
+	width: calc(100% - 170px);
+	width: -webkit-calc(100% - 170px);
+}
+.contents2{
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	width: 50%;
+}
+.contents3{
+	position: absolute;
+	right: 0;
+	top: 120px;
+	z-index: 10;
+	width: 50%;
+}
+.contents4{
+	position: absolute;
+	right: 0;
+	top: 280px;
+	z-index: 10;
+	width: 50%;
+}
+.contents5{
+	position: absolute;
+	right: 0;
+	top: 440px;
+	z-index: 10;
+	width: 50%;
+}
+.contents2 div.樋口聖人{
+	position:absolute;
+	top:20px;
+	left:10px;
+	color:darkred;
+	background-color:#fff;
+	padding:15px;
+	font-size:20px;
+	line-height:130%;
+}
+.contents3 h2{
+	position:absolute;
+	top:40px;
+	color:darkred;
+	background-color:#fff;
+	font-size:20px;
+	line-height:130%;
+}
+.contents4 h3{
+	position:absolute;
+	top:30px;
+	color:darkred;
+	background-color:#fff;
+	font-size:20px;
+	line-height:130%;
+}
+.contents5 form{
+	position:absolute;
+	top:30px;
+	color:darkred;
+	background-color:#fff;
+	font-size:20px;
+	line-height:130%;
+}
+.contents1{
+	overflow: scroll;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: calc(100% - 170px);
+	width: -webkit-calc(100% - 170px);
+	height: 100%;
+}
