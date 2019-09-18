@@ -114,3 +114,61 @@ img {
 	width: -webkit-calc(100% - 170px);
 	height: 100%;
 }
+
+
+/*sp用css*/
+@media screen and (max-width:720px){
+	nav{
+		width: 100%;
+		position: static;
+	}
+	.logo{width: 100%;}
+	.mainvisual{
+		width: 100%;
+		position: static;
+	}
+	.contents2{
+		width: 100%;
+		position: static;
+	}
+	.contents3{
+		width: 100%;
+		position: static;
+	}
+	.contents4{
+		width: 100%;
+		position: static;
+	}
+	.contents5{
+		width: 100%;
+		position: static;
+	}
+
+	.contents1{
+		position: static;
+		overflow: visible;
+		width: 100%
+	}
+	.contents5 form{
+		position: relative;
+		top: -269px;
+		width: 59%
+	}
+	.contents4 h3{
+		position: relative;
+		top: -252px;
+		width: 11%
+	}
+	.contents3 h2{
+		position: relative;
+		top:-223px;
+		width: 46%
+	}
+	.contents2 div.樋口聖人{
+		position: relative;
+		top: -325px;
+		width: 22%
+	}
+	ul{position: static;}
+	body{overflow: visible;}
+}
