@@ -1,0 +1,76 @@
+#stage {
+	margin: 50px auto 0;
+  padding: 30px 0 20px;
+  width: 410px;
+	background: #E0DEDA;
+}	
+
+#stage #screen {
+  margin: 0 auto 15px;
+	width: 354px;
+	height: 80px;
+	background: #DFE9E9;
+  position: relative;
+}
+
+#stage #screen p {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+}
+#stage #screen p.text1 {
+  margin-bottom: 3px;
+  top: 10px;
+}
+#stage #screen p.text2 {
+  font-size: 24px;
+  font-weight: bold;
+  top: 35px;
+}
+
+h1{
+	text-align: center;
+}
+
+.rows {
+	display: inline-flex;
+	text-align: justify;
+	font-size: 40px;
+	width: 100%;
+}
+
+#stage ul {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 354px;
+  display: inline-block;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+ 
+#stage ul li {
+  margin: 0 auto;
+  background: #FFF;
+  width: 62px;
+  height: 62px;
+  border-radius: 70px;
+  list-style: none;
+  line-height: 62px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#stage ul li:hover {
+  background: #eee;
+}
+#stage ul li:active {
+  border: #8ADDFD 2px solid;
+  box-sizing: border-box;
+}
+#stage ul li.colspan {
+  width: 90px;
+  text-align: center;
+}

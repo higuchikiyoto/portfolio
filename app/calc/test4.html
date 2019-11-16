@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="test4.css">
+			<title>電卓</title>
+			<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+			<script type="text/javascript">
+			
+			$(function(){	
+				var numbtn = $(".num");
+				var scr1 = $("#screen .text1");
+				var scr2 = $("#screen .text2");
+				var ac = $("#ac");
+				var puramai = $("#puramai");
+				var pa = $("#pa");
+				var waru = $("#waru");
+				var kakeru = $("#kakeru");
+				var hiku = $("#hiku");
+				var tasu = $("#tasu");
+				var ten = $("#ten");
+				var wa = $("#wa");
+				var tenflg = false;  //小数点が使える状況かどうかを判断するフラグ
+				var second = false;  //一度計算を行った後かどうか確認するフラグ
+				var keisan1,keisan2;  //計算に使う数字を格納する変数
+				var calc;  //計算式のタイプを格納する変数（1=足し算、2=引き算、3=掛け算、4=割り算）
+				var kigou;  //数式記号を格納する変数
+				var kekka;  //計算結果を格納する変数
+
+
+
+				//全ての表示を消す関数
+				function allclear(){
+				 // scr1.text('');
+				  scr2.text('');
+				  keisan1 = keisan2 = calc = '';
+				}
+
+
+				//#screenに数字を表示する関数
+				
+				function hyoji1(i){
+				  //var j = scr1.text();
+				  //scr1.text(j+i);
+				}
+				function hyoji2(i){
+				  var j = scr2.text();
+				  scr2.text(j+i);
+				}
+
+
+				//表示されている数字をkeisan1に保存して液晶表示を消す関数
+				function save(){
+				  keisan1 = scr2.text();
+				  scr2.text('');
+				}
+
+
+				//数字ボタンをクリックした時の処理
+				$(".num").on('click',function(){
+				  if(second == true) {  //2回目以降の計算の場合
+				    allclear();  //表示をクリアー
+				    second = false;  //secondフラグの無効化
+				  }
+				  var moji = $(this).text();  //クリックしたボタンの文字をmojiに格納
+				  hyoji1(moji);  //.text1へ格納した文字を表示させる
+				  hyoji2(moji);  //.text2へ格納した文字を表示させる
+				});
+
+
+				//小数点ボタンをクリックした時の処理
+				$("#ten").on('click',function(){
+					 if(second == true) {
+				    allclear();
+				    second = false;
+				  }
+				  var moji = $(this).text();
+				  if (scr2.text().match(/\./)) return;
+				  hyoji1(moji);
+				  hyoji2(moji);
+				  tenflg = true;
+				});
+
+
+				//+/-ボタンをクリックした時
+				$("#puramai").on('click',function(){
+					if (second == true) {
+						allclear();
+						second = false;
+					}
+
+				});
+
+
+
+
+
+
+
+				//%ボタンをクリックした時の処理
+				$("#pa").on('click',function(){
+					if (scr2.text()=='') {return};									
+						//scr2.text()*0.01;
+						var panum = eval(scr2.text() + '*' + '0.01');
+						scr2.text(panum);
+						//save();
+						
+				});
+
+
+				//計算ボタンをクリックした時の処理
+				$("#hiku").on('click',function(){
+					if (scr2.text()=='') {return};
+						save();
+						calc = 2;
+						second = false;
+				});
+
+				$("#tasu").on('click',function(){
+					if (scr2.text()=='') {return};
+						save();
+						calc = 1;
+						second = false;
+				});
+
+				$("#waru").on('click',function(){
+					if (scr2.text()=='') {return};
+						save();
+						calc = 4;
+						second = false;
+				});			
+
+				$("#kakeru").on('click',function(){
+					if (scr2.text()=='') {return};
+						save();
+						calc = 3;
+						second = false;
+				});
+
+
+				//全てクリアAC
+				$("#ac").on('click',function(){
+					allclear();
+				});
+
+
+				//計算結果の処理
+				$("#wa").on('click',function(){
+					keisan2 = scr2.text();
+					if (calc == 1) {
+						kekka = keisan1 + '+' + keisan2;
+					}else if (calc == 2) {
+						kekka = keisan1 + '-' + keisan2;
+					}else if (calc == 3) {
+						kekka = keisan1 + '*' + keisan2;	
+					}else if (calc == 4) {
+						kekka = keisan1 + '/' + keisan2;	
+					}
+					kekka = eval(kekka);
+					
+					scr2.text(kekka);
+				});
+
+
+
+
+			});
+			</script>	
+		</head>
+			<body>
+				<div id="stage">
+					<h1>電卓</h1>
+						<div id="screen">
+							<p class="text1"></p>
+							<p class="text2"></p>
+						</div>
+					<ul>
+						<div class="rows">
+							<li id="ac" class="colspan">AC</li>
+							<li id="puramai" class="colspan">+/-</li>
+							<li id="pa" class="colspan">%</li>
+							<li id="waru">÷</li>
+						</div>
+						<div class="rows">
+							<li class="num">7</li>
+							<li class="num">8</li>
+							<li class="num">9</li>
+							<li id="kakeru">×</li>
+						</div>
+						<div class="rows">
+							<li class="num">4</li>
+							<li class="num">5</li>
+							<li class="num">6</li>
+							<li id="hiku">-</li>
+						</div>
+						<div class="rows">
+							<li class="num">1</li>
+							<li class="num">2</li>
+							<li class="num">3</li>
+							<li id="tasu">+</li>
+						</div>
+						<div class="rows">
+							<li class="num">0</li>
+							<li id="ten">.</li>
+							<li id="wa" class="colspan">=</li>
+						</div>
+					</ul>
+				</div>
+			</body>
+	</html>
