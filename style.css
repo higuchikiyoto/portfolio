@@ -91,12 +91,47 @@ img {
 }
 .contents4 h3{
 	position:absolute;
-	top:30px;
+	top:4px;
 	color:darkred;
 	background-color:#fff;
 	font-size:20px;
 	line-height:130%;
 }
+
+.blog{
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	font-size: 10px;
+}
+
+.blog > a{
+	width: 50%;
+}
+
+.blog a p{
+	text-decoration: none;
+	color: #ffffff;
+	text-align: center;
+}
+
+.titlewp{
+	font-size: 25px;
+}
+
+.blog a p:nth-of-type(2){
+	font-size: 16px;
+	color: #fb0000;
+}
+
+.blog a p:nth-of-type(3){
+	font-size: 20px;
+}
+
 .contents5 form{
 	position:absolute;
 	top:30px;
