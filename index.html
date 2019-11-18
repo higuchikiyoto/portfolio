@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-	<html>
+	<html lang="ja">
 		<head>
-			<title></title>
-				<meta http-equiv="content-type" charset="utf-8">
-				<meta name="viewport" content="width=device-width,initial-scale=1">
-				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-				<link rel="stylesheet" type="text/css" href="style.css">
-				<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-				<script type="text/javascript" src="js/ajax.js"></script>
-				
+			<meta http-equiv="content-type" charset="utf-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+			<title>Kiyoto Higuchi Portfolio Site</title>
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+			<link rel="stylesheet" type="text/css" href="css/slick.css">
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+			<script type="text/javascript" src="js/slick.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+			<script type="text/javascript" src="js/ajax.js"></script>
 		</head>
 		<body>
+			<!-- MENU部 -->
 			<nav>
 				<div class="logo">
 					<i class="fab fa-android"></i>
@@ -18,39 +21,90 @@
 				<ul>
 					<li>
 						<i class="fas fa-battery-full"></i>
-						<p>works</p>
+						<p><a href="#works">works</a></p>
 					</li>
 					<li>
 						<i class="fas fa-battery-three-quarters"></i>
-						<p>about</p>
+						<p><a href="#about">about</a></p>
 					</li>
 					<li>
 						<i class="fas fa-battery-half"></i>
-						<p>skill</p>
+						<p><a href="#skills">skill</a></p>
 					</li>
 					<li>
 						<i class="fas fa-battery-quarter"></i>
-						<p>message</p>
+						<p><a href="#message">message</a></p>
 					</li>
 				</ul>
 			</nav>
-			<div class="mainvisual">
+			<main class="mainvisual">
 				<img src="img/dog.jpg" class="bg1">
 				
-				<div class="contents1">
-					<div class="contents2">
+				<div class="contents">
+					<!-- Profile 自己紹介 -->
+					<section id="about">
 						<img src="https://github.com/higuchikiyoto/portfolio/blob/master/img/a.jpg?raw=true" class="bg2">
-						<div class="樋口聖人"> 樋口聖人 </div>
-					</div>
+						<div class="content">
+							<h2>-- Profile --</h2>
+							<p>NAME : 樋口 聖人<span>(Higuchi Kiyoto)</span></p>
+							<p>Birthday : <span>1995/11/27</span></p>
+							<p>Blood Type : <span>？？？型</span></p>
+							<p>Hobbies : <span>趣味・特技？？？</span></p>
+							<p>Career : <span>経歴？？？</span></p>
+						</div>
+					</section>
 
-					<div class="contents3">
+					<!-- Skill 習得技術 -->
+					<section id="skills">
 						<img src="img/b.jpg" class="bg3">
-						<h2> 1995年11月27日 </h2>
-					</div>
+						<div class="content">
+							<h2>-- SKILLS --</h2>
+							<div class="threshold">
+								<div>
+									<h3>デザイン</h3>
+									<i class="fas fa-paint-brush"></i>
+									<p>HTML / CSS / JavaScript(JQuery)</p>
+									<p>CSSアニメーション / JQueryアニメーション</p>
+									<p>レスポンシブデザイン / デザイン</p>
+								</div>
+								<div>
+									<h3>開発</h3>
+									<i class="far fa-file-code"></i>
+									<p>JavaScript(JQuery / Vue.js) / PHP7系 / SQL </p>
+									<p>WEBアプリケーション開発</p>
+								</div>
+								<div>
+									<h3>資格系？</h3>
+									<i class="far fa-file-code"></i>
+									<p>保有資格？？？</p>
+									<p>？？？</p>
+								</div>
+							</div>
+						</div>
+					</section>
 
-					<div class="contents4">
+					<!-- Works 作品集 -->
+					<section id="works">
+						<img src="img/b.jpg" class="bg3">
+						<div class="content">
+							<h2>-- WORKS --</h2>
+							<div class="slider-container">
+								<div class="slider">
+									<div><img src="img/app.jpg"></div>
+									<div><img src="img/app.jpg"></div>
+									<div><img src="img/app.jpg"></div>
+									<div><img src="img/app.jpg"></div>
+									<div><img src="img/app.jpg"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Blog WordPress 連携項目 -->
+					<section id="blogs">
 						<img src="img/c.jpg" class="bg4">
-						<h3> Blog </h3>
+						<div class="content">
+							<h2>-- Blog --</h2>
 							<div class="blog">
 								<a href="" class="blog1">
 									<p class="titlewp">秋</p>
@@ -73,29 +127,41 @@
 									<p>summer</p>
 								</a>
 							</div>
-					</div>
+						</div>
+					</section>
 
-					<div class="contents5">
+					<!-- 問い合わせフォーム -->
+					<section id="message">
 						<img src="img/d.jpg" class="bg5">
-						<form action="./mail.php" method="post" autocomplete="off">
-							<label for="name">
-								<input type="text" name="name" id="name" placeholder="名前">
-							</label>
-							<label for="mail">
-								<input type="email" name="mail" id="mail" placeholder="メール">
-							</label>
-							<label for="tell">
-								<input type="tell" name="tell" id="tell" maxlength="11" placeholder="電話">
-							</label>
-							<label for="text">
-								<input type="text" name="text" id="text" placeholder="件名">
-							</label>
-							<textarea name="contact" id="contact" placeholder="内容"></textarea>
-							<input type="submit" name="submit" value="送信">
-						</form>
-					</div>
+						<div class="content">
+							<form action="./mail.php" method="post" autocomplete="off">
+								<label for="name">
+									<span>氏名</span>
+									<input type="text" name="name" id="name" placeholder="氏名">
+								</label>
+								<label for="mail">
+									<span>メールアドレス</span>
+									<input type="mail" name="mail" id="mail" placeholder="sample@sample.com">
+								</label>
+								<label for="tel">
+									<span>電話番号</span>
+									<input type="tel" name="tel" id="tel" maxlength="12" placeholder="0123456789">
+								</label>
+								<label for="text">
+									<span>件名</span>
+									<input type="text" name="text" id="text" placeholder="件名">
+								</label>
+								<label><span>お問い合わせ内容</span></label>
+								<textarea name="contact" id="contact" placeholder="内容"></textarea>
+								<div class="submit_btn">
+									<input type="submit" name="submit" value="submit" id="submit" disabled><label for="submit">確認画面へ</label>
+								</div>
+							</form>
+						</div>
+					</section>
+
 				</div>
-			</div>
+			</main>
 
 			<div>
 				
