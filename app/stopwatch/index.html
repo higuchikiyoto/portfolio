@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>ストップウォッチ</title>
+			<style type="text/css">
+
+				*{
+					margin: 0;
+					padding: 0;
+				}
+
+				#stopwatch{
+					text-align: center;
+				}
+
+				.myButton{
+					background: rgba(234,110,72,1);
+				    background: -moz-linear-gradient(45deg, rgba(234,110,72,1) 0%, rgba(188,26,99,1) 100%);
+				    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(234,110,72,1)), color-stop(100%, rgba(188,26,99,1)));
+				    background: -webkit-linear-gradient(45deg, rgba(234,110,72,1) 0%, rgba(188,26,99,1) 100%);
+				    background: -o-linear-gradient(45deg, rgba(234,110,72,1) 0%, rgba(188,26,99,1) 100%);
+				    background: -ms-linear-gradient(45deg, rgba(234,110,72,1) 0%, rgba(188,26,99,1) 100%);
+				    background: linear-gradient(45deg, rgba(234,110,72,1) 0%, rgba(188,26,99,1) 100%);
+				    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea6e48', endColorstr='#bc1a63', GradientType=1 );
+				    width: 200px;
+				}
+
+				.title{
+					color: #CCFF66;
+				}
+
+				.main{
+					color: #6699FF;	
+				}
+
+
+
+
+
+
+
+
+
+
+
+			</style>
+		</head>
+			<body>
+				<div id="stopwatch">
+					<!-- 表示 -->
+					<h1 class="title">ストップウォッチ</h1>
+					<h1 class="main">
+						<span>{{minute}}</span>
+						<span>{{second}}</span>
+						<span>{{decimal}}</span>
+					</h1>
+						<br>
+					<input type="button" class="myButton" v-on:click="start()" v-if="!timer" value="START" id="startBtn">
+				    <input type="button" class="myButton" v-on:click="stop()"  v-if="timer" value="STOP">
+				    <input type="button" class="myButton" v-on:click="reset()" v-if="!timer" value="RESET">
+
+				</div>
+
+
+				<!-- Vue -->
+				<script src="https://unpkg.com/es6-promise"></script>
+				<script src="https://unpkg.com/vue"></script>
+				<script src="https://unpkg.com/http-vue-loader"></script>
+
+				<script type="text/javascript">
+					var stopwatch = new Vue({
+						el:'#stopwatch',
+						data : {
+							minute:0,
+							second:0,
+							decimal:0,
+							timer:false,
+							timerObj:null
+						},
+
+						methods : {
+							countUp(){
+								let self = this;
+								self.decimal++;
+								if(self.decimal>99) self.dispHundred();
+								if(self.second>59) self.dispSixty();
+								
+							},
+
+							start(){
+								let self = this;
+								this.timerObj = setInterval(function(){self.countUp(); }, 10);
+								this.timer = true;
+								var time = JSON.stringify(this.decimal);
+								localStorage.setItem('decimal',time);
+								var time = JSON.stringify(this.second);
+								localStorage.setItem('second',time);
+							},
+
+							stop(){
+								clearInterval(this.timerObj);
+								this.timer = false;
+								var time = JSON.stringify(this.decimal);
+								localStorage.setItem('decimal',time);
+								var time = JSON.stringify(this.second);
+								localStorage.setItem('second',time);
+							},
+
+							dispHundred(){
+								this.decimal = 0;
+								this.second++;
+							},
+
+							dispSixty(){
+								this.second = 0;
+								this.minute++;
+							},
+
+							reset(){
+								this.minute = 0;
+								this.second = 0;
+								this.decimal = 0;
+							}
+
+
+							
+						},
+
+						mounted(){
+							if(String(this.decimal).length<2) this.decimal = '0' +String(this.decimal);
+							if(String(this.second).length<2) this.second = '0' +String(this.second);
+							if(localStorage.getItem('decimal')) {
+								try{
+									this.decimal = JSON.parse(localStorage.getItem('decimal'))
+								}catch(e){
+									var time = JSON.stringify(this.decimal);
+									localStorage.setItem('decimal',time);
+								}
+							}
+							if(localStorage.getItem('second')) {
+								try{
+									this.second = JSON.parse(localStorage.getItem('second'))
+								}catch(e){
+									var time = JSON.stringify(this.second);
+									localStorage.setItem('second',time);
+								}
+							}
+						},
+
+						updated(){
+							if (String(this.decimal).length<2) this.decimal = '0' +String(this.decimal);
+							if (String(this.second).length<2) this.second = '0' +String(this.second);
+
+						}
+
+					});
+
+
+				</script>
+
+			</body>
+	</html>
