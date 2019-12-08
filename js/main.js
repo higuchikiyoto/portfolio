@@ -18,4 +18,15 @@ $(function(){
 		]
 	});
 
+	$('div.menu').on('click',function(){
+		if ($('.menu-trigger').hasClass('active')){
+			$('.menu-trigger').removeClass('active');
+			$('nav').removeClass('active');
+		}else{
+			$('.menu-trigger').addClass('active');
+			$('nav').addClass('active');
+			console.log('.menu-nav');
+		}
+	});
+
 });
