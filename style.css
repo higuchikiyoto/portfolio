@@ -48,6 +48,11 @@ li{
 	height:100%;
 	z-index: -1;
 }
+
+.menu{
+	display: none;
+}
+
 /* CONTENTS */
 main > div.contents{
 	position: fixed;
@@ -294,6 +299,7 @@ input[type="submit"]#back + label{
     z-index: 9000;
     right: 40px;
     cursor: pointer;
+    display: block;
 }
 
 .menu-trigger,
