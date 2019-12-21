@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 .menu-trigger {
-  position: relative;
-  width: 55px;
-  height: 44px;
-  left: 353px;
-  top: 15px;
+  position: absolute;
+  width: 65px;
+  right: 50px;
+  top: 20px;
+  z-index: 7000;
 }
 .menu-trigger span {
   position: absolute;
@@ -26,12 +26,12 @@
   top: 20px;
 }
 .menu-trigger span:nth-of-type(3) {
-  bottom: 0;
+  top: 40px;
 }
 
 .menu-trigger::after {
   position: absolute;
-  top: 50%;
+  top: 21px;
   left: 50%;
   display: block;
   content: '';
@@ -109,15 +109,14 @@
   }
 } 
 
+ul.active{
+    transform: translateY(0);
+   }
+
 
 *{
-  background-color:   #FFFFCC;
   margin:0;
   padding:0;
-}
-
-li{
-  background-color: #9999CC;
 }
 
 header{
@@ -134,17 +133,43 @@ header > div{
 .menu{
   position: fixed;
   top: 0px;
-  z-index: 9200;
+  z-index: 5000;
   right: 0px;
   cursor: pointer;
   display: block;
-  background-color: #9999CC;
   width: 100%;
   text-align: center;
   height: 100%;
+  background-image: url(../img/CL13.jpg);
   transform: translateY(-100%);
   transition: all 1.0s ease;
 }
+
+.air{
+  font-size: 30px;
+  line-height: 115px;
+}
+
+.kp{
+  font-size: 30px;
+  line-height: 115px;
+}
+
+.mane{
+  font-size: 30px;
+  line-height: 115px;
+}
+
+.os{
+  font-size: 30px;
+  line-height: 115px;
+}
+
+.home{
+  font-size: 30px;
+  line-height: 115px;
+}
+
 
 
 .CL1{
@@ -157,7 +182,8 @@ header > div{
 .title{
   font-size: 25px;
   text-align: center;
-  background-color:     #AAFFFF;
+  background-color:#CBFFD3;
+  margin: 20px;
 }
 
 section{
@@ -170,10 +196,36 @@ section > div{
   width: 50%;
   height: 200px;
   overflow: hidden;
+  background-color: #FFFFAA;
 }
 
 img{
   width: 100%;
   height: 200px;
+}
+
+.tok{
+  margin-top: 20px;
+  background-image: url(../img/CL15.jpg);
+  width: 100%;
+}
+
+a{
+  font-size: 30px;
+  margin: 20px;
+}
+
+.box13 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #FFF;
+    background: #6eb7ff;
+    border-bottom: solid 6px #3f87ce;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.box13 p {
+    margin: 0; 
+    padding: 0;
 }
 

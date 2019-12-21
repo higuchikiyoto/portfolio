@@ -1,31 +1,17 @@
 $(function(){
-	$('.slider').slick({
-		centerMode: true,
-	    centerPadding: '0px',
-	    focusOnSelect:true,
-		slidesToShow:2,
-		slidesToScroll:2,
-		prevArrow:'<div class="slick-prev-button slick-button"><i class="fas fa-arrow-circle-left"></i></div>',
-        nextArrow:'<div class="slick-next-button slick-button"><i class="fas fa-arrow-circle-right"></i></div>',
-        responsive:[
-			{
-				breakpoint: 650,
-				settings:{
-				    slidesToShow:1,
-				    centerPadding: '10px',
-				}
-			},	
-		]
-	});
 
-	$('ul.menu').on('click',function(){
-		if ($('.menu-trigger').hasClass('active')){
+	$('.menu-trigger').on('click',function(){
+		console.log('cha');
+		if ($('ul').hasClass('active')){
+			$('ul').removeClass('active');
 			$('.menu-trigger').removeClass('active');
-			$('nav').removeClass('active');
+			$('body').css('overflow','visible');
 		}else{
+			$('ul').addClass('active');
 			$('.menu-trigger').addClass('active');
-			$('nav').addClass('active');
-			console.log('.menu-nav');
+			$('body').css('overflow','hidden');
+		console.log('test');
+			
 		}
 	});
 
