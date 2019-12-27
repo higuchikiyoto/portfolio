@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SUB SAMPLE</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/sub.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<div class="logo">
+			<a href="javascript:void(0);" v-on:click="sortData()">
+				<img src="img/kagent_logo.png" alt="株式会社KAgent ロゴ">	
+			</a>
+		</div>
+		<nav v-bind:class="{ active: menuBtnFlg }">
+			<ul>
+				<li><a href="#top"><ruby><rb>TOP</rb><rt>トップ</rt></ruby></a></li>
+				<li><a href="#about"><ruby><rb>ABOUT</rb><rt>会社概要</rt></ruby></a></li>
+				<li><a href="#mission"><ruby><rb>MISSION</rb><rt>経営理念</rt></ruby></a></li>
+				<li><a href="#works"><ruby><rb>WORKS</rb><rt>業務内容</rt></ruby></a></li>
+				<li><a href="#contact"><ruby><rb>CONTACT</rb><rt>お問い合わせ</rt></ruby></a></li>
+				<li><a href="#qa"><ruby><rb>Q/A</rb><rt>よくある質問</rt></ruby></a></li>
+			</ul>
+		</nav>
+		<div class="menu_btn" v-bind:class="{ active: menuBtnFlg }" v-on:click="menuBtnClick()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</header>
+
+	<!-- CONTENTS -->
+	<main>
+		<div class="title">
+			<h1>会社概要</h1>
+			<div class="balls">
+				<div></div>
+			</div>
+		</div>
+
+		<div class="bread">
+			<ul>
+				<li><a href="#top">TOP</a></li>
+				<li>会社概要</li>
+			</ul>
+		</div>
+
+		<section class="contents">
+			<h2>株式会社KAgent</h2>
+			<table>
+				<tr>
+					<td>社名</td>
+					<td>株式会社KAgent（ケージェント）</td>
+				</tr>
+				<tr>
+					<td>代表者名</td>
+					<td>久保田淳平</td>
+				</tr>
+				<tr>
+					<td>設立</td>
+					<td>2017年10月12日</td>
+				</tr>
+				<tr>
+					<td>代表者名</td>
+					<td>久保田淳平</td>
+				</tr>
+				<tr>
+					<td>事業内容</td>
+					<td>
+						<p>ＳＥＳ事業</p>
+						<p>システムエンジニアの育成</p>
+						<p>システム開発</p>
+						<p>ホームページ制作</p>
+					</td>
+				</tr>
+				<tr>
+					<td>所在地</td>
+					<td>
+						<p>〒105-0012</p>
+						<p>東京都港区芝大門１丁目４−４ ノア芝大門205</p>
+					</td>
+				</tr>
+				<tr>
+					<td>電話番号</td>
+					<td>03-6453-0197</td>
+				</tr>
+				<tr>
+					<td>FAX</td>
+					<td>03-6453-0199</td>
+				</tr>
+				<tr>
+					<td>資本金</td>
+					<td>5,000,000円</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h2>ACCESS</h2>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.748417945893!2d139.75226571511072!3d35.65856958019955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc0d3955555%3A0x58c5f4dab12c2bb9!2z44OO44Ki6Iqd5aSn6ZaA!5e0!3m2!1sja!2sjp!4v1577257772881!5m2!1sja!2sjp" frameborder="0" style="border:0;width: 100%;height: 100%;" allowfullscreen=""></iframe>
+			</div>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<div>
+			<div class="site">
+				<h3>サイトマップ</h3>
+				<ul>
+					<li><a href="#top">トップページ</a></li>
+					<li><a href="#about">会社概要</a></li>
+					<li><a href="#mission">経営理念</a></li>
+					<li>
+						<a href="#works">業務内容</a>
+						<ul>
+							<li><a href="#ses">システムエンジニアリングサービス業</a></li>
+							<li><a href="#web">Webシステム開発業務</a></li>
+							<li><a href="#edu">フロントエンジニア・IT事務教育事業</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#top">お問い合わせ</a>
+						<ul>
+							<li><a href="#recruit">採用情報</a></li>
+							<li><a href="#dev">見積依頼・案件相談</a></li>
+							<li><a href="#web">その他、お問い合わせ</a></li>
+						</ul>
+					</li>
+					<li><a href="#qa">よくある質問</a></li>
+				</ul>	
+			</div>
+		</div>
+		<h2>&copy;株式会社KAgent | （株式会社ケージェント）<span class="nowYear">2020</span>年</h2>
+	</footer>
+	<script src="https://unpkg.com/es6-promise"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script type="text/javascript" src="js/sub.js"></script>
+</body>
+</html>

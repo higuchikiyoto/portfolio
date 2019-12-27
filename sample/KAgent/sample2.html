@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>株式会社KAgent</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/top.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<div class="logo">
+			<a href="javascript:void(0);" v-on:click="sortData()">
+				<img src="img/kagent_logo.png" alt="株式会社KAgent ロゴ">	
+			</a>
+		</div>
+		<nav v-bind:class="{ active: menuBtnFlg }">
+			<ul>
+				<li><a href="#top"><ruby><rb>TOP</rb><rt>トップ</rt></ruby></a></li>
+				<li><a href="#about"><ruby><rb>ABOUT</rb><rt>会社概要</rt></ruby></a></li>
+				<li><a href="#mission"><ruby><rb>MISSION</rb><rt>経営理念</rt></ruby></a></li>
+				<li><a href="#works"><ruby><rb>WORKS</rb><rt>業務内容</rt></ruby></a></li>
+				<li><a href="#contact"><ruby><rb>CONTACT</rb><rt>お問い合わせ</rt></ruby></a></li>
+				<li><a href="#qa"><ruby><rb>Q/A</rb><rt>よくある質問</rt></ruby></a></li>
+			</ul>
+		</nav>
+		<div class="menu_btn" v-bind:class="{ active: menuBtnFlg }" v-on:click="menuBtnClick()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</header>
+	<!-- CONTENTS -->
+	<main>
+		<!-- TOP -->
+		<section id="top">
+			<div class="slider-wrapper">
+				<div class="slick-slider">
+					<div>
+						<h1>KAgent1</h1>
+						<img src="img/img1.png" />
+					</div>
+					<div>
+						<h1>KAgent2</h1>
+						<img src="img/img3.png" />
+						<a href="#top">株式会社KAgent</a>
+					</div>
+					<div>
+						<h1>KAgent3</h1>
+						<img src="img/img4.png" />
+						<a href="#top">株式会社KAgent</a>
+					</div>
+					<div>
+						<h1>KAgent4</h1>
+						<img src="img/img5.png" />
+						<a href="#top">株式会社KAgent</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="vision">
+			<div class="two-col">
+				<div>
+					<div class="inner">
+						<h2>VISION</h2>
+						<p class="pick">企業様には、より良い人材を</p>
+						<p class="pick">エンジニア様には、より良い環境を</p>
+						<p>以上をご提供できるAgentであろうと、</p>
+						<p>我々は、日々邁進しております。</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/pick.jpg">
+				</div>
+			</div>
+		</section>
+		<section id="pickup">
+			<h1>BUSINESS</h1>
+			<div class="three-col">
+				<div>
+					<img src="img/design.jpg">
+					<h2 class="bl">
+						システムエンジニアリングサービス<br>
+						<span>SES</span>事業
+					</h2>
+					<a href="#works_ses" class="bl">more</a>
+				</div>
+				<div>
+					<img src="img/engineer.jpg">
+					<h2>
+						<span>HP・LP</span>制作<br>
+						<span>WEB</span>アプリケーション開発事業
+					</h2>
+					<a href="#works_dev">more</a>
+				</div>
+				<div>
+					<img src="img/pc.jpg">
+					<h2 class="bl">
+						<span>IT</span>事務
+						<br>エンジニア教育事業
+					</h2>
+					<a href="#works_edu" class="bl">more</a>
+				</div>
+			</div>
+		</section>
+		<section id="info">
+			<div>
+				<h1>News</h1>
+				<div class="info">
+					<table>
+						<tr v-for="info of news">
+							<td>{{info.date}}</td>
+							<td>{{info.content}}</td>
+						</tr>
+					</table>
+				</div>	
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div>
+			<div class="site">
+				<h3>サイトマップ</h3>
+				<ul>
+					<li><a href="#top">トップページ</a></li>
+					<li><a href="#about">会社概要</a></li>
+					<li><a href="#mission">経営理念</a></li>
+					<li>
+						<a href="#works">業務内容</a>
+						<ul>
+							<li><a href="#ses">システムエンジニアリングサービス業</a></li>
+							<li><a href="#web">Webシステム開発業務</a></li>
+							<li><a href="#edu">フロントエンジニア・IT事務教育事業</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#top">お問い合わせ</a>
+						<ul>
+							<li><a href="#recruit">採用情報</a></li>
+							<li><a href="#dev">見積依頼・案件相談</a></li>
+							<li><a href="#web">その他、お問い合わせ</a></li>
+						</ul>
+					</li>
+					<li><a href="#qa">よくある質問</a></li>
+				</ul>	
+			</div>
+		</div>
+		<h2> &copy; <span class="nowYear">2020</span> 株式会社KAgent</h2>
+	</footer>
+
+	<script src="https://unpkg.com/es6-promise"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+</body>
+</html>

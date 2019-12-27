@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'NotoSansJP';
+  src: url(./font/NotoSansJP/NotoSansJP-Regular.otf) format('opentype');  
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansSC';
+  src: url(./font/NotoSansSC/NotoSansSC-Regular.otf) format('opentype');  
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sawarabi';
+  src: url(./font/SawarabiGothic/SawarabiGothic-Regular.ttf) format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Hannari font';
+	src: url('./font/Hannari/Hannari-Regular.eot'); /* IE9 Compat Modes */
+	src: url('./font/Hannari/Hannari-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('./font/Hannari/Hannari-Regular.woff') format('woff'),
+	     url('./font/Hannari/Hannari-Regular.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IFhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}
+/* MATERIAL ICON SET */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./font/icon/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(./font/icon/MaterialIcons-Regular.woff2) format('woff2'),
+    url(./font/icon/MaterialIcons-Regular.woff) format('woff'),
+    url(./font/icon/MaterialIcons-Regular.ttf) format('truetype');
+}
+/* font-family class set */
+.font-kaushan {
+  font-family:'Kaushan Script';
+  font-size:16px;
+}
+
+.font-hannari {
+	font-family: 'Hannari font';
+	font-size: 16px;
+}
+/* material icon set */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+/* COMMON CSS */
+*{
+	margin:0;
+	padding: 0;
+	color: #777777;
+	font-size: 16px;
+	font-family: 'NotoSansJP',YuGothic,'Yu Gothic','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul,ol,li{
+	content: "";
+	list-style: none;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #777; 
+}
+::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 10px;
+  box-shadow: none;
+}
