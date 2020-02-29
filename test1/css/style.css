@@ -1,0 +1,337 @@
+html{
+  width: 100%;
+  height: 315px;
+  background-color: #FFFFEE;
+  background-image: repeating-linear-gradient(45deg,
+  #EEEEEE, #EEEEEE 3px,
+  transparent 0, transparent 6px);
+}
+
+body{
+  margin: 35px;
+  background-color: #FFFFEE;
+}
+
+h1 {
+  color: #364e96;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+  font-size: 55px;
+  text-align: center;
+  letter-spacing: 0.8em;
+  background-color: #FFFFEE;
+  font-family: serif;
+}
+
+.tel{
+  position: relative;
+  padding: 0.35em 0.5em;
+  color: #393939;
+  margin:0 0 0 auto;
+  font-size: 18px;
+  width: 29%;
+  background: #5fb10f;
+  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
+  border: 1px solid #5fb10f;
+  box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
+  color: #FFF;
+}
+
+.tel:before {
+  content: " ";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: -webkit-calc(100% - 16px);
+  width: calc(100% - 16px);
+  height: 0;
+  border: solid 8px transparent;
+  border-bottom-color: #5fb10f;
+  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
+}
+
+img{
+  width: 100%;
+  height: 400px;
+  margin-top: -25px;
+}
+
+#menubar {
+  clear: both;overflow: hidden;
+  background: #5fb10f;  /*背景色（古いブラウザ用）*/
+  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);   /*グラデーション*/
+}
+
+#menubar li{
+  float: left;  /*左に回り込み*/
+  width: 16%;  /*メニュー幅（100÷6個=16.66%）　もし４個にするなら100÷4=25%になる。*/
+  list-style:none;
+  margin-top: 0px;
+}
+
+#menubar li a {
+  display:  block;text-decoration: none;
+  text-align: center;
+  color: #fff;    /*文字色*/
+  font-weight: bold;  /*太字に*/
+  border-right: 1px solid #4d9c00;  /*メニューの右側の線の幅、線種、色*/
+  line-height: 1.6; /*行間を少し狭く*/
+  padding: 14px 0;  /*上下、左右へのメニュー内への余白*/
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.6);
+}
+
+/*１つ目のメニューへの追加設定*/
+#menubar li:first-child a {
+  border-left: 1px solid #4d9c00; /*メニューの線の幅、線種、色*/
+}
+
+/*装飾文字の設定*/
+#menubar li a span {
+  text-shadow: none;display: block;
+  font-size: 9px;     /*文字サイズ*/
+  font-weight: normal;  /*文字を太字でなく標準に戻す設定*/
+  letter-spacing: 0.2em;  /*文字間隔を少しあける設定*/
+  opacity: 0.5;     /*透明度50％*/
+}
+
+/*マウスオン時*/
+#menubar li a:hover {
+  background: #4d9c00;  /*背景色*/
+}
+
+/*スマホ用メニューを表示させない*/
+#menubar-s {display: none;}
+
+/*３本バーアイコンを表示させない*/
+#menubar_hdr {display: none;}
+
+.inner{
+  margin: 0px;
+}
+
+section > .menu{
+  width: 60%;
+}
+
+h2 {
+  color: #505050;/*文字色*/
+  padding: 1.0em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 0.8;/*行高*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+  margin: 80px 50px;
+  font-size: 35px;
+  width: 35%;
+  background: #5fb10f;
+  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
+  border: 1px solid #5fb10f;
+  box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
+  color: #FFF;
+  font-family: serif;
+  height: 30px;
+}
+
+h2:before {
+  content: '●';
+  color: white;
+  margin-right: 8px;
+  font-size: 23px;
+}
+
+.a{
+  padding-left: 4em;
+  margin-top: -65px;
+  line-height: 40px;
+  width: 85%;
+  font-size: 20px;
+}
+
+.a > p{
+  border-bottom: 3px double #0097A7;
+}
+
+.menu2{
+  position: relative;
+  margin: 2em 0em;
+  padding: -0.5em 1em .5em;
+  width: 40%;
+  box-shadow: 0 0 10px 10px #badcad; /* 影 */
+  width: 25%;
+  float: right;
+  right: 65px;
+  top: -340px;
+  background: #5fb10f;
+  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
+  border: 1px solid #5fb10f;
+  box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
+  color: #FFF;
+}
+
+h3{   
+ padding: 0 .5em;
+ font-weight: bold;
+ color: #769164; /* タイトル色 */
+ border-style: none none solid;
+ border-color: #d6e9ca; /*タイトル下線 */
+ border-width: 3px;
+ font-size: 30px;
+ color: #FFF;
+ font-family: serif;
+}
+
+.menu2 > p{
+  padding: .3em;
+  border-bottom: 2px dashed #29B6F6;
+  color: #000000;
+}
+
+h4{
+  padding: 25px 1em;
+  margin: 150px auto 50px auto;
+  color: #2c2c2f;
+  background: #cde4ff;/*背景色*/
+  width: 70%;
+  text-align: center;
+  font-size: 40px;
+  background: #5fb10f;
+  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
+  border: 1px solid #5fb10f;
+  box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
+  color: #FFF;
+  font-family: serif;
+}
+
+.img3{
+  width: 100%;
+  margin: -240px 0px 0px 0px;
+}
+
+.menu3 > p{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.menu4 {
+    padding: 0em 0em;
+    margin-top: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    color: #6091d3;
+    background: #FFF;
+    border: solid 15px #6091d3;
+    border-radius: 20px;
+    width: 70%;
+    height: 350px;
+}
+
+.menu4 p {
+    margin: 0; 
+    padding: 0;
+    z-index: 10;
+}
+
+.img2{
+  width: 35%;
+  height: 350px;
+  margin: 0px auto auto auto;
+  float: left;
+  position: relative;
+  z-index: 10;
+}
+
+h5{
+  position: relative;
+  margin: 0px;
+  height: 20%;
+  text-align: center;
+  font-size: 40px;
+  background: #5fb10f;
+  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
+  border: 1px solid #5fb10f;
+  box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
+  color: #FFF;
+  font-family: serif;
+}
+
+.menu4 > ul{
+  font-size: 65px;
+  text-align: center;
+  letter-spacing: 0em;
+  position: relative;
+  margin: 5px 50px 0px 280px;
+}
+
+.menu4 > li{
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0em;
+  position: relative;
+  margin: 8px 50px 0px 280px;
+  list-style:none;
+}
+
+.menu5{
+  padding: 1.5em 1em;
+  margin: 10px 50px 0px 330px;
+  background: #f4f4f4;
+  border-left: solid 6px #5bb7ae;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+  width: 230px;
+  position: absolute;
+}
+.menu5 p {
+  margin: 0; 
+  padding: 0;
+}
+
+.menu6{
+  padding: 1.5em 1em;
+  margin: 10px 200px 0px 325px;
+  background: #f4f4f4;
+  border-left: solid 6px #5bb7ae;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+  width: 230px;
+  float: right;
+  position: relative;
+}
+.menu6 p {
+  margin: 0; 
+  padding: 0;
+}
+
+.submenu{
+  width: 80%;
+  position: absolute;
+}
+
+/*フッター設定
+---------------------------------------------------------------------------*/
+footer {
+  clear: both;
+  background: #5fb10f;  /*背景色*/
+  color: #fff;  /*文字色*/
+  font-size: 85%; /*文字サイズ*/
+}
+footer a {color: #fff;}
+footer a:hover {color: #fff;}
+footer .pr {display: block;font-size: 80%;}
+
+/*フッターメニュー
+---------------------------------------------------------------------------*/
+/*ボックス全体*/
+#footermenu {
+  overflow: hidden;
+  padding: 20px 0;
+  margin: 150px 0px 0px 125px;
+}
+/*１行分の設定*/
+#footermenu ul {
+  float: left;  /*左に回り込み*/
+  width: 17%;   /*幅。今回は５列作ったのでここの幅18%と下のpadding(合計の2%)でトータル20%になるよう設定。列に応じて調整して下さい。*/
+  padding-right: 1%;
+  padding-left: 20px;
+}
