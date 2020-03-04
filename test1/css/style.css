@@ -7,10 +7,12 @@ html{
   transparent 0, transparent 6px);
 }
 
+
 body{
   margin: 35px;
   background-color: #FFFFEE;
 }
+
 
 h1 {
   color: #364e96;/*文字色*/
@@ -22,6 +24,7 @@ h1 {
   letter-spacing: 0.8em;
   background-color: #FFFFEE;
   font-family: serif;
+  margin-top: 140px;
 }
 
 .tel{
@@ -57,58 +60,6 @@ img{
   margin-top: -25px;
 }
 
-#menubar {
-  clear: both;overflow: hidden;
-  background: #5fb10f;  /*背景色（古いブラウザ用）*/
-  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);   /*グラデーション*/
-}
-
-#menubar li{
-  float: left;  /*左に回り込み*/
-  width: 16%;  /*メニュー幅（100÷6個=16.66%）　もし４個にするなら100÷4=25%になる。*/
-  list-style:none;
-  margin-top: 0px;
-}
-
-#menubar li a {
-  display:  block;text-decoration: none;
-  text-align: center;
-  color: #fff;    /*文字色*/
-  font-weight: bold;  /*太字に*/
-  border-right: 1px solid #4d9c00;  /*メニューの右側の線の幅、線種、色*/
-  line-height: 1.6; /*行間を少し狭く*/
-  padding: 14px 0;  /*上下、左右へのメニュー内への余白*/
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.6);
-}
-
-/*１つ目のメニューへの追加設定*/
-#menubar li:first-child a {
-  border-left: 1px solid #4d9c00; /*メニューの線の幅、線種、色*/
-}
-
-/*装飾文字の設定*/
-#menubar li a span {
-  text-shadow: none;display: block;
-  font-size: 9px;     /*文字サイズ*/
-  font-weight: normal;  /*文字を太字でなく標準に戻す設定*/
-  letter-spacing: 0.2em;  /*文字間隔を少しあける設定*/
-  opacity: 0.5;     /*透明度50％*/
-}
-
-/*マウスオン時*/
-#menubar li a:hover {
-  background: #4d9c00;  /*背景色*/
-}
-
-/*スマホ用メニューを表示させない*/
-#menubar-s {display: none;}
-
-/*３本バーアイコンを表示させない*/
-#menubar_hdr {display: none;}
-
-.inner{
-  margin: 0px;
-}
 
 section > .menu{
   width: 60%;
@@ -149,7 +100,7 @@ h2:before {
 }
 
 .a > p{
-  border-bottom: 3px double #0097A7;
+  border-bottom: 3px double #364e96;
 }
 
 .menu2{
@@ -183,7 +134,7 @@ h3{
 
 .menu2 > p{
   padding: .3em;
-  border-bottom: 2px dashed #29B6F6;
+  border-bottom: 2px dashed #364e96;
   color: #000000;
 }
 
@@ -214,37 +165,39 @@ h4{
   font-size: 20px;
 }
 
-.menu4 {
-    padding: 0em 0em;
-    margin-top: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    color: #6091d3;
-    background: #FFF;
-    border: solid 15px #6091d3;
-    border-radius: 20px;
-    width: 70%;
-    height: 350px;
-    position: relative;
+
+nav{
+  margin-top: 150px;
+  padding: 0em 0em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 140px;
+  border: solid 6px #364e96;
+  border-radius: 5px;
+  width: 90%;
+  height: 250px;
+  display: flex;
+}
+
+.menu4{
+  width: 35%;
 }
 
 .img2{
-  width: 35%;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   margin: 0px auto auto auto;
-  float: left;
-  position: relative;
-  z-index: 10;
+}
+
+.menu5{
+  width: 65%;
 }
 
 h5{
-  position: relative;
   margin: 0px;
   height: 20%;
   text-align: center;
-  font-size: 40px;
-  background: #5fb10f;
+  font-size: 35px;
   background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
   border: 1px solid #5fb10f;
   box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
@@ -252,69 +205,91 @@ h5{
   font-family: serif;
 }
 
-.menu4 > ul{
-  font-size: 65px;
+.menu5 > div{
+  font-size: 55px;
   text-align: center;
-  letter-spacing: 0em;
-  position: relative;
-  margin: 5px 50px 0px 280px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: #364e96;
 }
 
-.menu4 > li{
-  font-size: 40px;
+.menu5 > li{
+  font-size: 25px;
   text-align: center;
-  letter-spacing: 0em;
+  letter-spacing: 0.2em;
   position: relative;
-  margin: 8px 50px 0px 280px;
   list-style:none;
+  font-weight: bold;
+  color: #364e96;
+  margin-bottom: 5px;
 }
 
 .sam1{
-  padding: 24px 18px;
-  margin: 10px 50px 0px 330px;
+  padding: 18px 18px;
   background: #f4f4f4;
-  border-left: solid 6px #5bb7ae;
+  border-left: solid 6px #364e96;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
-  width: 225px;
+  width: 290px;
   position: relative;
   text-align: center;
+  float: left;
+  margin: auto 20px;
 }
 
 .sam2{
-  padding: 24px 18px;
-  margin: -97px 15px 0px 325px;
+  padding: 18px 18px;
   background: #f4f4f4;
-  border-left: solid 6px #5bb7ae;
+  border-left: solid 6px #364e96;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
-  width: 225px;
+  width: 290px;
   float: right;
   position: relative;
+  text-align: center;
+  margin: auto 20px;
 }
 
-/*フッター設定
----------------------------------------------------------------------------*/
-footer {
-  clear: both;
-  background: #5fb10f;  /*背景色*/
-  color: #fff;  /*文字色*/
-  font-size: 85%; /*文字サイズ*/
+div#footer-fixed{
+  position: fixed;            /* フッターの固定 */
+  bottom: 0px;                /* 位置(下0px) */
+  left: 0px;                  /* 位置(左0px) */
+  width: 100%;                /* 横幅100%　*/
+  height: 100px;              /* 縦幅140px */
+  z-index: 100;
 }
-footer a {color: #fff;}
-footer a:hover {color: #fff;}
-footer .pr {display: block;font-size: 80%;}
+ 
+div#footer-bk{
+  background-color:#AEFFBD;     /* 背景色(黒) */
+  padding:10px 0 20px;       /* 上10px、下20pxをあける */
+  height:100px;              /* 縦の高さ140px */
+  width:100%;                /* 横の幅を100% */
+}
+ 
+div#footer { 
+  border: 5px solid #fff;    /* 表示領域を白枠で囲う */
+  height: 100%;              /* 縦の表示領域はheader-bkと同じ */
+  width: 1300px;              /* 横の幅970px */
+  margin: auto;              /* 中央揃え */
+}
 
-/*フッターメニュー
----------------------------------------------------------------------------*/
-/*ボックス全体*/
-#footermenu {
-  overflow: hidden;
-  padding: 20px 0;
-  margin: 150px 0px 0px 125px;
+div#footer2-fixed{
+  position: fixed;            /* フッターの固定 */
+  top: 0px;                /* 位置(上0px) */
+  left: 0px;                  /* 位置(左0px) */
+  width: 100%;                /* 横幅100%　*/
+  height: 100px;              /* 縦幅140px */
+  z-index: 100;
 }
-/*１行分の設定*/
-#footermenu ul {
-  float: left;  /*左に回り込み*/
-  width: 17%;   /*幅。今回は５列作ったのでここの幅18%と下のpadding(合計の2%)でトータル20%になるよう設定。列に応じて調整して下さい。*/
-  padding-right: 1%;
-  padding-left: 20px;
+ 
+div#footer2-bk{
+  background-color:#AEFFBD;     /* 背景色(黒) */
+  padding:10px 0 20px;       /* 上10px、下20pxをあける */
+  height:100px;              /* 縦の高さ140px */
+  width:100%;                /* 横の幅を100% */
+}
+ 
+div#footer2{ 
+  border: 5px solid #fff;    /* 表示領域を白枠で囲う */
+  height: 100%;              /* 縦の表示領域はheader-bkと同じ */
+  width: 1300px;              /* 横の幅970px */
+  margin: auto;              /* 中央揃え */
 }
