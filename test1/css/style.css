@@ -11,37 +11,46 @@ html{
 body{
   margin: 35px;
   background-color: #FFFFEE;
+  position: relative;
 }
 
+.header1{
+  width: 100%;
+  margin-top: -10px;
+  display: flex;
+}
 
 h1 {
-  color: #364e96;/*文字色*/
+  color: #5fb10f;/*文字色*/
   padding: 0.5em 0;/*上下の余白*/
-  border-top: solid 3px #364e96;/*上線*/
-  border-bottom: solid 3px #364e96;/*下線*/
-  font-size: 60px;
+  border-top: solid 3px #5fb10f;/*上線*/
+  border-bottom: solid 3px #5fb10f;/*下線*/
+  font-size: 40px;
   text-align: center;
   letter-spacing: 0.8em;
   background-color: #FFFFEE;
   font-family: serif;
-  margin-top: 120px;
+  margin-top: 15px;
+  width: 70%;
 }
 
-.tel{
+.header1 >p{
   position: relative;
-  padding: 0.35em 0.5em;
   color: #393939;
-  margin:0 0 0 auto;
+  top: 51px;
+  padding-right: 0px;
+  right: 0;
   font-size: 18px;
-  width: 29%;
+  width: 30%;
   background: #5fb10f;
   background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
   border: 1px solid #5fb10f;
   box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
   color: #FFF;
+  height: 80%;
 }
 
-.tel:before {
+.header1 >p:before {
   content: " ";
   position: absolute;
   top: -16px;
@@ -54,88 +63,402 @@ h1 {
   background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
 }
 
-img{
+.img5{
+  display: flex;
+  margin-top: -10px;
+}
+
+.img6{
   width: 100%;
-  height: 400px;
-  margin-top: -25px;
+  height: 480px;
+  filter: blur(1px);
 }
 
-
-section > .menu{
-  width: 60%;
-}
-
-h2 {
-  color: #505050;/*文字色*/
-  padding: 1.0em;/*文字周りの余白*/
-  display: inline-block;/*おまじない*/
-  line-height: 0.8;/*行高*/
-  vertical-align: middle;
-  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
-  margin: 80px 50px;
-  font-size: 35px;
-  width: 35%;
-  background: #5fb10f;
-  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
-  border: 1px solid #5fb10f;
-  box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
-  color: #FFF;
-  font-family: serif;
-  height: 30px;
-}
-
-h2:before {
-  content: '●';
-  color: white;
-  margin-right: 8px;
-  font-size: 23px;
-}
-
-.a{
-  padding-left: 4em;
-  margin-top: -65px;
-  line-height: 40px;
-  width: 85%;
+.img11{
+  position: absolute;
+  text-align: center;
+  margin-top: 90px;
   font-size: 20px;
 }
 
-.a > p{
-  border-bottom: 3px double #364e96;
+.img7{
+  position: absolute;
+  padding-right: 7em;
+  margin: -78px 950px 20px 10px;
+  background: white;
+  color: #5fb10f;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.img7:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 10px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e6f4ff;
+  width: 0;
+  height: 0;
+}
+
+.img7 p {
+  margin: 0; 
+  padding: 0;
+  width: 80px;
+  white-space: nowrap;
+}
+
+.img8{
+  position: absolute; 
+  padding-right: 7em;
+  margin: -78px 950px 20px 300px;
+  background: white;
+  color: #5fb10f;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.img8:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 10px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e6f4ff;
+  width: 0;
+  height: 0;
+}
+
+.img8 p {
+  margin: 0; 
+  padding: 0;
+  width: 80px;
+  white-space: nowrap;
+}
+
+.img9{
+  position: absolute; 
+  padding-right: 7em;
+  margin: -78px 950px 20px 590px;
+  background: white;
+  color: #5fb10f;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.img9:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 10px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e6f4ff;
+  width: 0;
+  height: 0;
+}
+
+.img9 p {
+    margin: 0; 
+    padding: 0;
+    width: 80px;
+    white-space: nowrap;
+}
+
+.img10{
+  text-align: center;
+  margin: 120px 150px;
+  font-size: 55px;
+  white-space: nowrap;
+  color: #5fb10f;
+  text-shadow: 1px 1px 0 white,
+               -1px 1px 0 white,
+               1px -1px 0 white,
+               -1px -1px 0 white;
+  position: absolute;
+  letter-spacing: 0.5em;
+  line-height: 40px;
+}
+
+.p10{
+  font-size: 70px;
+  color: #FFFF00;
+}
+
+.img20{
+  position: absolute;
+  right: 0;
+  margin-top: 40px;
+  height: 440px;
+  width: 320px;
+}
+
+section{
+  margin-top: 60px;
+}
+
+section > .menu{
+  width: 100%;
+  display: flex;
+}
+
+.menu2 >h2 {
+  position: absolute;
+    display: inline-block;
+    top: -16px;
+    left: 0px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #5fb10f;
+    color: white;
+    font-weight: bold;
+    width: 98%;
+    height: 50px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.menu2 >h3{
+  color: red;
+  margin-top: 50px;
 }
 
 .menu2{
+  padding-left: 4em;
+  padding-top: 100px;
+  line-height: 40px;
+  width: calc(100% / 2);
+  font-size: 20px;
+  margin-top: 0px;
   position: relative;
-  margin: 2em 0em;
-  padding: -0.5em 1em .5em;
+    padding: 0.5em 1em;
+    border: solid 10px #5fb10f;
+    border-radius: 8px;
+}
+
+.menu2 >p{
+  border-bottom: 3px double #364e96;
+  margin-top: 90px;
+}
+
+.img12{
+  right: 0;
   width: 40%;
-  box-shadow: 0 0 10px 10px #badcad; /* 影 */
-  width: 25%;
-  float: right;
-  right: 65px;
-  top: -340px;
+  padding-left: 30px;
+}
+
+.menu20{
+  width: 80%;
+  height: 450px;
+  margin: 140px auto;
+}
+
+.menu21{
+  margin: 25px auto;
+  height: 30px;
+  position: relative;
   background: #5fb10f;
-  background: linear-gradient(#b4da8e, #6bb721 49%, #5fb10f 50%);
-  border: 1px solid #5fb10f;
-  box-shadow: 1px 2px 7px rgba(0,0,0,0.4);
-  color: #FFF;
+  box-shadow: 0px 0px 0px 5px #5fb10f;
+  border: dashed 2px white;
+  padding: 0em  0em 2em 0.5em;
+  color: white;
+  font-size: 40px;
+  width: 400px;
 }
 
-h3{   
- padding: 0 .5em;
- font-weight: bold;
- color: #769164; /* タイトル色 */
- border-style: none none solid;
- border-color: #d6e9ca; /*タイトル下線 */
- border-width: 3px;
- font-size: 30px;
- color: #FFF;
- font-family: serif;
+.menu21:after {
+  position: absolute;
+  content: '';
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #fff #fff #5fb10f;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-.menu2 > p{
-  padding: .3em;
-  border-bottom: 2px dashed #364e96;
-  color: #000000;
+.menu27{
+  display: flex;
+  left: 0;
+  width: 800px;
+  margin: 80px 85px auto;
+  height: 400px;
+}
+
+.menu22{
+  margin: -12px 50px;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.img50{
+  background: #66FF66;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: -100px; 
+}
+
+.menu22 >div{
+ margin: 115px -110px;
+  background: #5fb10f;
+  font-size: 25px;
+  text-align: center;
+  width: 180px;
+  white-space: nowrap;
+  color: white;
+}
+
+.menu23{
+  margin: -12px 250px;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: calc(120px / 5);
+}
+
+.img51{
+  background: #66FF66;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: -100px;
+}
+
+.menu23 >div{
+ margin: 115px -82px;
+ width: 120px;
+  background: #5fb10f;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.menu24{
+  margin: -12px 450px;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: calc(120px / 5);
+}
+
+.img52{
+  background: #66FF66;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: -100px;
+}
+
+.menu24 >div{
+ margin: 115px -82px;
+ width: 120px;
+  background: #5fb10f;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.menu25{
+  margin: -12px 650px;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: calc(120px / 5);
+}
+
+.img53{
+  background: #66FF66;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: -100px;
+}
+
+.menu25 >div{
+ margin: 115px -82px;
+ width: 120px;
+  background: #5fb10f;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.menu26{
+  margin: -12px 850px;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: calc(120px / 5);
+}
+
+.img54{
+  background: #66FF66;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: -100px;
+}
+
+.menu26 >div{
+ margin: 115px -82px;
+ width: 120px;
+  background: #5fb10f;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.p1{
+  width: 0;
+  height: 0;
+  border-left: 30px solid black;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  top: 15%;
+  left: -138px;
+  transform: translateY(-50%);
+}
+
+.p2{
+  width: 0;
+  height: 0;
+  border-left: 30px solid black;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  top: 15%;
+  left: -138px;
+  transform: translateY(-50%);
+}
+
+.p3{
+  width: 0;
+  height: 0;
+  border-left: 30px solid black;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  top: 15%;
+  left: -138px;
+  transform: translateY(-50%);
+}
+
+.p4{
+  width: 0;
+  height: 0;
+  border-left: 30px solid black;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  top: 15%;
+  left: -138px;
+  transform: translateY(-50%);
 }
 
 h4{
@@ -154,11 +477,6 @@ h4{
   font-family: serif;
 }
 
-.img3{
-  width: 100%;
-  margin: -240px 0px 0px 0px;
-}
-
 .menu3 > p{
   text-align: center;
   margin-top: 30px;
@@ -171,7 +489,7 @@ nav{
   padding: 0em 0em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 155px;
+  margin-bottom: 120px;
   border: solid 6px #364e96;
   border-radius: 5px;
   width: 95%;
@@ -269,10 +587,10 @@ h5{
   margin: auto;           /* フッターの固定 */
   bottom: 0px;                /* 位置(上0px) */
   width: 94%;                /* 横幅100%　*/
-  height: 100px;              /* 縦幅140px */
+  height: 70px;              /* 縦幅140px */
   z-index: 100;
-  padding: 15px 15px 15px 35px;
-  background-color: #F0F8FF; /* ボックス背景色 */
+  padding: 10px 15px 10px 35px;
+  background-color: #99FF66; /* ボックス背景色 */
   color: #666; /* 文章色 */
   border: 1px solid #88b5d3; /* ボックス枠線 */
   box-shadow: 0 0 2px 1px #ccc; /* 影 */
@@ -287,7 +605,7 @@ h5{
   top: 8px;
   width: 17px;
   height : 17px;
-  background-color: #fff; /*穴背景色*/
+  background-color: #99FF99; /*穴背景色*/
   box-shadow: 0 0 8px #aaa inset; /*穴の影*/
   border: 1px solid #88b5d3; /*パンチ穴枠色*/
   border-radius: 50%;
@@ -296,99 +614,23 @@ h5{
 .contents1{
   background-color: white;
   height: 100%;
+  border-radius: 10px;
 }
 
 .contents2{
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 0.5em;
   white-space: nowrap;
+  margin: 0px 40px;
 }
 
 .contents3{
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0.5em;
+  margin: 0px 40px;
 }
 
-.footer2-fixed{
-  position: fixed;            /* フッターの固定 */
-  top: 0px;                /* 位置(上0px) */
-  left: 0px;                  /* 位置(左0px) */
-  width: 100%;                /* 横幅100%　*/
-  height: 100px;              /* 縦幅140px */
-  z-index: 100;
-  background-size: 20px 20px;
-  background-color: #FF4F02;
-  background-image:
-  linear-gradient(45deg, rgba(56, 142, 60, 0.5) 25%, transparent 25%,
-  transparent 50%, rgba(56, 142, 60, 0.5) 50%, rgba(56, 142, 60, 0.5) 75%,
-  transparent 75%, transparent),
-  linear-gradient(-45deg, rgba(56, 142, 60, 0.5) 25%, transparent 25%,
-  transparent 50%, rgba(56, 142, 60, 0.5) 50%, rgba(56, 142, 60, 0.5) 75%,
-  transparent 75%, transparent);
-}
-
-.contents4{
-  margin: 10px auto;
-  width: 99%;
-  height: 80px
-}
-
-.contents4 > div{
-  width: calc(98% / 2);
-  height: 50px;
-}
-
-.contents5{
-  background-color: white;
-  position: absolute;
-  display: inline-block;
-  font-size: 35px;
-  text-align: center;
-  white-space: nowrap;
-  margin-top: 14px;
-  font-weight: bold;
-}
-
-.contents5:before, .contents5:after {
-  content: '';
-  display: inline-block;
-  width: 45px;
-  height: 8px;
-  border-top: solid 4px black;
-  border-bottom: solid 4px black;
-  margin-bottom: 4px;
-}
-
-.contents5:before {
-  left:0;
-}
-.contents5:after {
-  right: 0;
-}
-
-.contents6{
-  background-color: white;
-  float: right;
-  position: relative;
-  padding: 13px 1px 7px;
-  border: solid 5px #FFC107;
-}
-
-.contents6 .contents6-1 {
-  position: absolute;
-  display: inline-block;
-  top: -2px;
-  left: -2px;
-  padding: 0 9px;
-  height: 25px;
-  line-height: 25px;
-  font-size: 17px;
-  background: #FFC107;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.contents6 p {
-  margin: 13px; 
-  padding: 0;
+.menu40{
+  margin-top: 200px;
+  font-size: 30px;
 }
