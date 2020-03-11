@@ -11,7 +11,6 @@ html{
 body{
   margin: 35px;
   background-color: #FFFFEE;
-  position: relative;
 }
 
 .header1{
@@ -75,100 +74,87 @@ h1 {
 }
 
 .img11{
-  position: absolute;
+  display: flex;
   text-align: center;
-  margin-top: 90px;
   font-size: 20px;
 }
 
 .img7{
+  margin-top: 15px;
+  padding: 0px;
+  left: 55px;
   position: absolute;
-  padding-right: 7em;
-  margin: -78px 950px 20px 10px;
-  background: white;
-  color: #5fb10f;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-.img7:after {
-  position: absolute;
-  content: '';
-  top: 100%;
-  left: 10px;
-  border: 15px solid transparent;
-  border-top: 15px solid #e6f4ff;
-  width: 0;
-  height: 0;
+  width: 90%;
+  height: 100%;
 }
 
 .img7 p {
-  margin: 0; 
-  padding: 0;
+  margin-top: -110px; 
   width: 80px;
   white-space: nowrap;
+  color: white;
+  position: absolute;
+  left: 3px;
+}
+
+.img26{
+  width: 22%;
+  height: 26%;
+  border-radius: 50%;
+  display: block;
 }
 
 .img8{
-  position: absolute; 
-  padding-right: 7em;
-  margin: -78px 950px 20px 300px;
-  background: white;
-  color: #5fb10f;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-.img8:after {
+  margin-top: 15px;
+  padding: 0px;
+  left: 37%;
   position: absolute;
-  content: '';
-  top: 100%;
-  left: 10px;
-  border: 15px solid transparent;
-  border-top: 15px solid #e6f4ff;
-  width: 0;
-  height: 0;
+  width: 50%;
+  height: 130%;
 }
 
 .img8 p {
-  margin: 0; 
-  padding: 0;
+  margin-top: -110px; 
   width: 80px;
   white-space: nowrap;
+  color: white;
+  position: absolute;
+  left: 60px;
+}
+
+.img22{
+  width: 45%;
+  height: 20%;
+  border-radius: 50%;
+  display: block;
 }
 
 .img9{
-  position: absolute; 
-  padding-right: 7em;
-  margin: -78px 950px 20px 590px;
-  background: white;
-  color: #5fb10f;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-.img9:after {
+  margin-top: 15px;
+  padding: 0px;
+  right: 50px;
   position: absolute;
-  content: '';
-  top: 100%;
-  left: 10px;
-  border: 15px solid transparent;
-  border-top: 15px solid #e6f4ff;
-  width: 0;
-  height: 0;
 }
 
 .img9 p {
-    margin: 0; 
-    padding: 0;
-    width: 80px;
-    white-space: nowrap;
+  margin-top: -110px; 
+  width: 80px;
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  left: 50px;
+}
+
+.img25{
+  width: 101%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
 }
 
 .img10{
   text-align: center;
-  margin: 120px 150px;
-  font-size: 55px;
+  font-size: 50px;
   white-space: nowrap;
   color: #5fb10f;
   text-shadow: 1px 1px 0 white,
@@ -178,6 +164,9 @@ h1 {
   position: absolute;
   letter-spacing: 0.5em;
   line-height: 40px;
+  width: 96%;
+  height: 100%;
+  top: 50%;
 }
 
 .p10{
@@ -185,16 +174,9 @@ h1 {
   color: #FFFF00;
 }
 
-.img20{
-  position: absolute;
-  right: 0;
-  margin-top: 40px;
-  height: 440px;
-  width: 320px;
-}
 
 section{
-  margin-top: 60px;
+  margin-top: 140px;
 }
 
 section > .menu{
@@ -219,6 +201,7 @@ section > .menu{
     margin-top: 15px;
     font-size: 30px;
 }
+
 
 .menu2 >h3{
   color: red;
@@ -251,8 +234,8 @@ section > .menu{
 
 .menu20{
   width: 80%;
-  height: 450px;
-  margin: 140px auto;
+  height: 400px;
+  margin: 160px auto;
 }
 
 .menu21{
@@ -281,10 +264,11 @@ section > .menu{
 
 .menu27{
   display: flex;
+  justify-content: space-between;
   left: 0;
-  width: 800px;
-  margin: 80px 85px auto;
-  height: 400px;
+  width: 725px;
+  margin: auto;
+  height: 400px;  
 }
 
 .menu22{
@@ -383,7 +367,7 @@ section > .menu{
  margin: 115px -82px;
  width: 120px;
   background: #5fb10f;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   color: white;
 }
@@ -411,6 +395,8 @@ section > .menu{
   font-size: 25px;
   text-align: center;
   color: white;
+  line-height: 30px;
+  text-indent: 21px;
 }
 
 .p1{
@@ -461,12 +447,16 @@ section > .menu{
   transform: translateY(-50%);
 }
 
-h4{
-  padding: 25px 1em;
-  margin: 150px auto 50px auto;
-  color: #2c2c2f;
-  background: #cde4ff;/*背景色*/
+.menu3{
+  margin: auto;
   width: 70%;
+}
+
+h4{
+  padding: 15px;
+  margin: auto;
+  color: #2c2c2f;
+  width: 100%;
   text-align: center;
   font-size: 40px;
   background: #5fb10f;
@@ -477,7 +467,19 @@ h4{
   font-family: serif;
 }
 
-.menu3 > p{
+.submenu{
+  display: flex;
+}
+
+.img23{
+  width: 40%;
+  height: 300px;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.submenu > p{
   text-align: center;
   margin-top: 30px;
   font-size: 20px;
@@ -630,7 +632,25 @@ h5{
   margin: 0px 40px;
 }
 
-.menu40{
-  margin-top: 200px;
-  font-size: 30px;
+.menu27 > div{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: calc(100% / 5 - 25px);
+  margin-right: 5px;
+}
+
+.menu27 > div > div{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.menu27 > div > img{
+  margin: 0;
+}
+.menu27 > div > span{
+  display: none;
+}
+.menu27 > div > div > div{
+ 
 }
