@@ -338,6 +338,7 @@ section > .menu{
   color: white;
   white-space: nowrap;
   padding: 1px 20px 1px 20px;
+  line-height: 30px;
 }
 
 .menu26{
