@@ -67,7 +67,7 @@ h1 {
   text-align: center;
   font-size: 18px;
   position: absolute;
-  height: 190px;
+  height: 205px;
   width: 100%;
   justify-content: space-around;
   bottom: 0;
@@ -78,10 +78,11 @@ h1 {
 .img11 > div{
   border-radius: 50%;
   overflow: hidden;
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   position: relative;
   border: solid 5px #008800;
+  margin: 18px;
 }
 
 .img11 > div > img{
@@ -101,7 +102,7 @@ h1 {
   height: 31%;
   color: white;
   text-shadow: 0px 5px black, 0 0px 5px black;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .img10{
